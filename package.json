@@ -1,0 +1,17 @@
+{
+  "name": "cypress-recipes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jacobwsmith/cypress-recipes.git",
+  "author": "Jacob Smith <jacobwsmith@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "e2e": "cypress run",
+    "e2e:open": "cypress open",
+    "start": "http-server src -p 4201"
+  },
+  "devDependencies": {
+    "cypress": "^3.1.5",
+    "http-server": "^0.11.1"
+  }
+}

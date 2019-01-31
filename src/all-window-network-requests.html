@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test All Window Network Requests</title>
+  </head>
+  <body>
+    <h1>Test All Window Network Requests</h1>
+    <script>
+      ;(function() {
+        
+        // NOTE: This is the code we are looking to verify is requested in our e2e test
+        const script = document.createElement('script')
+        script.setAttribute('type', 'text/javascript')
+        script.src = 'http://127.0.0.1:4201/helpers/request.js'
+        document.body.insertBefore(script, document.body.firstChild)
+
+      })()
+    </script>
+  </body>
+</html>
