@@ -5,5 +5,4 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run:
-          yarn: true
+      - run: yarn ci
