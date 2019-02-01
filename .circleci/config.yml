@@ -1,10 +1,11 @@
 # to use orbs, must use version >= 2.1
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1.1.0
+  cypress: cypress-io/cypress@1.4.0
 workflows:
   build:
     jobs:
       - cypress/run:
-          start: yarn ci
-          wait-on: 'http://localhost:4201'
+          yarn: true
+          start: yarn start
+          wait-on: 'http://127.0.0.1:4201'
